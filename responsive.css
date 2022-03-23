@@ -1,12 +1,8 @@
-@media screen and (max-width: 375px) {
+@media all and (max-width: 375px) {
 
     .main_container {
-        /*border: 5px solid; */
         width: 100%;
         flex-direction: column;
-        /* margin-right: 0; */
-        /* width: auto; */
-        /* white-space: nowrap; */
         overflow-x: hidden;
         justify-content: normal;
         padding: 0;
