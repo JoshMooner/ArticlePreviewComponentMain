@@ -1,0 +1,171 @@
+:root {
+    --Very_Dark_Grayish_Blue: hsl(217, 19%, 35%);
+    --Desaturated_Dark_Blue: hsl(214, 17%, 51%);
+    --Grayish_Blue: hsl(212, 23%, 69%);
+    --Light_Grayish_Blue: hsl(210, 46%, 95%);
+    --White: #fff;
+}
+
+body {
+    background-color: var(--Light_Grayish_Blue);
+}
+
+.main_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 700px;
+    margin: 0 auto;
+    padding: 0 61px;
+}
+
+.main {
+    display: flex;
+    width: 730px;
+    height: auto;
+    margin: auto;
+    background-color: var(--White);
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgb(75 75 75 / 10%);
+}
+
+.main_hero_information {
+    font-family: 'Manrope', sans-serif;
+    margin: 15px 40px 35px 40px;
+}
+
+.main_hero_image {
+    height: auto;
+    width: 275px;
+    object-fit: cover;
+    object-position: 0% 0%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.main_hero_information_title__h1 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.6;
+    color: var(--Very_Dark_Grayish_Blue);
+}
+
+.main_hero_informaion_paragraph__p {
+    font-size: 13px;
+    font-weight: 200;
+    color: var(--Desaturated_Dark_Blue);
+}
+
+.main_hero_information_contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    position: relative;
+}
+
+.main_hero_information_contact_personaldata_container {
+    display: flex;
+    align-items: center;
+}
+
+.main_hero_information_contact_personaldata_container_name_and_date {
+    font-size: 10px;
+    margin-left: 15px;
+}
+
+.main_hero_information_contact_personaldata_container_name__h3 {
+    color: var(--Very_Dark_Grayish_Blue);
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.main_hero_information_contact_personaldata_container_date__p {
+    margin-top: 5px;
+    color: var(--Desaturated_Dark_Blue);
+}
+
+
+.main_hero_information_contact_personaldata_container__img {
+    border-radius: 50%;
+}
+
+.main_hero_information_contact_share {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--Light_Grayish_Blue);
+    transition: 0.5s
+}
+
+.main_hero_information_contact_share:hover {
+    cursor: pointer;
+}
+
+
+.main_hero_information_contact_share_container {
+    position: absolute;
+    display: flex;
+    background-color: var(--Very_Dark_Grayish_Blue);
+    width: 245px;
+    height: 54px;
+    color: var(--Grayish_Blue);
+    letter-spacing: 5px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    left: 208px;
+    bottom: 80px;
+    box-shadow: 2px 2px 8px 1px rgba(0,0,0,0.21);
+    transition: 0.5s
+}
+
+.main_hero_information_contact_share_container::after {
+    content: '';
+    display: block;
+    border-top: 20px solid var(--Very_Dark_Grayish_Blue);
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    position: absolute;
+    bottom: -40px;
+    right: calc(50% - 20px);
+}
+
+.main_hero_information_contact_share_container_title {
+    margin-left: 40px;
+    font-size: 12px;
+}
+
+.main_hero_information_contact_share_container_socialmedia {
+    margin-right: 25px;
+    width: 120px;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+}
+
+.main_hero_information_contact_share_container_icon-facebook, .main_hero_information_contact_share_container_icon-twitter, .main_hero_information_contact_share_container_icon-pinterest {
+    width: 20px;
+    height: 20px;
+}
+
+.main_hero_information_contact_share_container_icon-facebook:hover, .main_hero_information_contact_share_container_icon-twitter:hover, .main_hero_information_contact_share_container_icon-pinterest:hover {
+    cursor: pointer;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    left: calc(50% - 120px);
+    bottom: 0;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
